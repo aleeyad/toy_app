@@ -7,7 +7,9 @@
 
 <p>
 	<strong>First micropost:</strong> 
+	<% if @user.microposts.first %>
 	<%= @user.microposts.first.content %>
+	<% end %>
 </p>
 
 <p>
